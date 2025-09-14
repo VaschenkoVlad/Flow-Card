@@ -1,5 +1,5 @@
 import "../index.css"
-import { FirstType } from "../types/firstType"
+import type { FirstType } from "../types/firstType"
 
 const FirstPage = (props: FirstType) => {
   return (
@@ -18,4 +18,4 @@ const FirstPage = (props: FirstType) => {
     );
 };
 
-export default 
+export default FirstPage;
