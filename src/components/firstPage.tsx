@@ -3,6 +3,7 @@ import type { FirstType } from "../types/firstType";
 import Card from "./card";
 import { Link } from "react-router-dom";
 
+
 const FirstPage = ({ cards }: { cards: FirstType[] }) => {
   return (
     <>
@@ -23,7 +24,7 @@ const FirstPage = ({ cards }: { cards: FirstType[] }) => {
             key={card.id}
             title={card.title}
             list={card.list}
-            buttonName={card.buttonName}
+            buttonText={card.buttonName}
           />
         ))}
       </div>

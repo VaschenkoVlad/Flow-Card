@@ -20,12 +20,13 @@ const ThirdPage = ({ cards }: { cards: ThirdType[] }) => {
       <div className="cards-row">
         {cards.map(card => (
           <Card
-            key={card.id}
-            title={card.title}
-            price={card.price}
-            description={card.description}
-            buttonName={card.buttonName}
-          />
+          key={card.id}
+          title={card.title}
+          buttonText={card.buttonName}
+        >
+          <div className="price">${card.price}</div>
+          <p className="description">{card.description}</p>
+        </Card>
         ))}
       </div>
     </main>

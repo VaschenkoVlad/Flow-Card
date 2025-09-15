@@ -1,6 +1,6 @@
 export type CardProps = {
   title: string;
-  buttonName: string;
+  buttonText: string;
   list?: string[];
   children?: React.ReactNode;
   img?: string;
