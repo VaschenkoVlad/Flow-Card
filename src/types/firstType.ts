@@ -1,6 +1,6 @@
 export type FirstType = {
   id: number;
   title: string;
-  list: boolean;
+  list: string[];
   buttonName: string;
 };

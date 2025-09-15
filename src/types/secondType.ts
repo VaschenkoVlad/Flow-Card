@@ -1,4 +1,4 @@
-export type FirstType = {
+export type SecondType = {
   id: number;
   title: string;
   img: string;

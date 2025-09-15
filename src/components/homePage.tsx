@@ -1,9 +1,8 @@
 import "../index.css";
-import type { FirstType } from "../types/firstType";
 import Card from "./card";
 import { Link } from "react-router-dom";
 
-const FirstPage = ({ cards }: { cards: FirstType[] }) => {
+const HomePage = () => {
   return (
     <>
       <header>
@@ -16,20 +15,8 @@ const FirstPage = ({ cards }: { cards: FirstType[] }) => {
           </ul>
         </nav>
       </header>
-      <main>
-      <div className="cards-row">
-        {cards.map(card => (
-          <Card
-            key={card.id}
-            title={card.title}
-            list={card.list}
-            buttonName={card.buttonName}
-          />
-        ))}
-      </div>
-    </main>
     </>
   );
 };
 
-export default FirstPage;
+export default HomePage;

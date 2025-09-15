@@ -3,5 +3,5 @@ export type ThirdType = {
   title: string;
   price: number;
   description: string;
-  buttomName: string;
+  buttonName: string;
 };
